@@ -1541,7 +1541,8 @@ footer {
     <div class="cta-form-wrap">
       <div class="form-title">Оставить заявку</div>
       <div class="form-sub">Ответим в течение 1 рабочего часа и согласуем удобное время звонка.</div>
-      <form id="contactForm" novalidate>
+      <form id="contactForm" action="https://formspree.io/f/xwvwgzyp" method="POST">
+<input type="hidden" name="_subject" value="Новая заявка с сайта ТРП">
         <div class="form-row">
           <div class="form-field">
             <label for="fname">Ваше имя</label>
@@ -1634,28 +1635,12 @@ document.querySelectorAll('.faq-question').forEach(q => {
 
 // Contact form
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
   const name = document.getElementById('fname').value.trim();
   const phone = document.getElementById('fphone').value.trim();
   if (!name || !phone) {
     alert('Пожалуйста, укажите имя и телефон.');
     return;
   }
-  // Collect form data
-  const data = {
-    name,
-    phone,
-    company: document.getElementById('fcompany').value,
-    service: document.getElementById('fservice').value,
-    message: document.getElementById('fmessage').value
-  };
-  // Send to Yandex.Metrika goal if available
-  if (typeof ym !== 'undefined') {
-    ym(108475668, 'reachGoal', 'form_submit', data);
-  }
-  // Show success
-  this.style.display = 'none';
-  document.getElementById('formSuccess').classList.add('visible');
 });
 </script>
 
