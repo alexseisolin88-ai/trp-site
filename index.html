@@ -3,14 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ТРП — Точка Роста Производства</title>
-<meta name="description" content="Диагностика скрытых потерь промышленного предприятия. Закупки, подрядчики, производственные процессы — находим точки роста прибыли.">
+<title>ТРП — Промышленный консалтинг | Снижение затрат на закупки и подрядчиков</title>
+<meta name="description" content="Находим скрытые потери промышленного предприятия. Снижение затрат на закупки на 15–25%, на подрядчиков на 20–40%. Первые результаты за 2–4 недели. Бесплатная экспресс-диагностика.">
+<meta name="keywords" content="промышленный консалтинг, аудит закупок, аудит подрядчиков, снижение затрат, оптимизация производства, процессный аудит">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://trp-pro.ru/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ТРП — Находим скрытые потери производства">
+<meta property="og:description" content="Диагностика закупок, подрядчиков и производственных процессов. Каждая рекомендация — с финансовым обоснованием в рублях.">
+<meta property="og:url" content="https://trp-pro.ru/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ТРП — Точка Роста Производства",
+  "description": "Промышленный консалтинг: диагностика закупок, аудит подрядчиков, процессный аудит",
+  "url": "https://trp-pro.ru",
+  "telephone": "+7-999-137-52-57",
+  "email": "info@trp-pro.ru",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Нижний Новгород",
+    "addressCountry": "RU"
+  },
+  "areaServed": "RU",
+  "serviceType": ["Аудит закупок", "Аудит подрядчиков", "Процессный аудит", "Промышленный консалтинг"]
+}
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Inter:wght@300;400;500;600&display=swap');
 
-/* ══════════════════════════════════════════
-   RESET & TOKENS
-══════════════════════════════════════════ */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -41,7 +69,6 @@ body {
   overflow-x: hidden;
 }
 
-/* grain overlay */
 body::before {
   content: '';
   position: fixed;
@@ -165,7 +192,6 @@ nav {
   pointer-events: none;
   animation: heroGlow 6s ease-in-out infinite;
 }
-
 .hero-glow-2 {
   position: absolute;
   width: 300px; height: 300px;
@@ -182,7 +208,6 @@ nav {
   50%      { opacity: 1;   transform: translate(-50%,-50%) scale(1.06); }
 }
 
-/* corner decoration top-right */
 .hero-corner {
   position: absolute;
   top: 80px; right: clamp(24px,5vw,80px);
@@ -217,12 +242,7 @@ nav {
   opacity: 0;
   animation: fadeUp 0.8s 0.1s cubic-bezier(0.22,1,0.36,1) forwards;
 }
-
-.hero-label::before {
-  content: '';
-  width: 24px; height: 1px;
-  background: var(--green-40);
-}
+.hero-label::before { content: ''; width: 24px; height: 1px; background: var(--green-40); }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -240,11 +260,7 @@ nav {
   opacity: 0;
   animation: fadeUp 0.9s 0.2s cubic-bezier(0.22,1,0.36,1) forwards;
 }
-
-.hero-h1 .outline {
-  color: transparent;
-  -webkit-text-stroke: 2px rgba(99,255,180,0.75);
-}
+.hero-h1 .outline { color: transparent; -webkit-text-stroke: 2px rgba(99,255,180,0.75); }
 
 .hero-body {
   font-size: clamp(14px, 1.4vw, 16px);
@@ -299,7 +315,6 @@ nav {
 }
 .btn-ghost:hover { color: var(--cream); border-color: rgba(240,237,230,0.35); }
 
-/* hero right — large icon */
 .hero-right {
   display: flex;
   align-items: center;
@@ -308,7 +323,6 @@ nav {
   animation: fadeUp 1s 0.3s cubic-bezier(0.22,1,0.36,1) forwards;
 }
 
-/* hero stats strip */
 .hero-stats {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -337,22 +351,14 @@ nav {
   flex-shrink: 0;
 }
 
-.stat-desc {
-  font-size: 11px;
-  color: var(--cream-40);
-  line-height: 1.5;
-  max-width: 120px;
-}
+.stat-desc { font-size: 11px; color: var(--cream-40); line-height: 1.5; max-width: 120px; }
 
 /* ══════════════════════════════════════════
    SECTION COMMON
 ══════════════════════════════════════════ */
 section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 
-.section-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.section-inner { max-width: 1200px; margin: 0 auto; }
 
 .section-label {
   font-family: var(--font-body);
@@ -366,11 +372,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   align-items: center;
   gap: 12px;
 }
-.section-label::before {
-  content: '';
-  width: 20px; height: 1px;
-  background: var(--green-40);
-}
+.section-label::before { content: ''; width: 20px; height: 1px; background: var(--green-40); }
 
 .section-h2 {
   font-family: var(--font-disp);
@@ -381,10 +383,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   color: var(--cream);
   margin-bottom: 16px;
 }
-.section-h2 .outline {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(99,255,180,0.7);
-}
+.section-h2 .outline { color: transparent; -webkit-text-stroke: 1.5px rgba(99,255,180,0.7); }
 
 .section-sub {
   font-size: 15px;
@@ -395,7 +394,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 }
 
 /* ══════════════════════════════════════════
-   PROBLEM / PAIN
+   PROBLEM
 ══════════════════════════════════════════ */
 #problem { background: var(--bg-2); }
 
@@ -406,14 +405,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   align-items: start;
 }
 
-.problem-left {}
-
-.problem-right {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: 8px;
-}
+.problem-right { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
 
 .pain-item {
   padding: 24px 28px;
@@ -421,33 +413,11 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   transition: border-color 0.3s, background 0.3s;
   cursor: default;
 }
-.pain-item:hover {
-  border-left-color: var(--green-40);
-  background: var(--green-04);
-}
+.pain-item:hover { border-left-color: var(--green-40); background: var(--green-04); }
 
-.pain-num {
-  font-family: var(--font-disp);
-  font-weight: 900;
-  font-size: 11px;
-  color: rgba(99,255,180,0.2);
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
-}
-
-.pain-title {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 15px;
-  color: var(--cream);
-  margin-bottom: 6px;
-}
-
-.pain-body {
-  font-size: 13px;
-  color: var(--cream-40);
-  line-height: 1.65;
-}
+.pain-num { font-family: var(--font-disp); font-weight: 900; font-size: 11px; color: rgba(99,255,180,0.2); letter-spacing: 0.1em; margin-bottom: 8px; }
+.pain-title { font-family: var(--font-body); font-weight: 600; font-size: 15px; color: var(--cream); margin-bottom: 6px; }
+.pain-body { font-size: 13px; color: var(--cream-40); line-height: 1.65; }
 
 /* ══════════════════════════════════════════
    SERVICES
@@ -470,7 +440,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   cursor: default;
 }
 .service-card:hover { background: var(--bg-green); }
-
 .service-card::before {
   content: '';
   position: absolute;
@@ -483,9 +452,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 }
 .service-card:hover::before { transform: scaleX(1); }
 
-.service-icon {
-  margin-bottom: 28px;
-}
+.service-icon { margin-bottom: 28px; }
 
 .service-num {
   font-family: var(--font-disp);
@@ -499,45 +466,191 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 }
 .service-card:hover .service-num { color: rgba(99,255,180,0.18); }
 
-.service-title {
-  font-family: var(--font-disp);
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--cream);
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
-}
-
-.service-body {
-  font-size: 13px;
-  color: var(--cream-40);
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.service-items {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
+.service-title { font-family: var(--font-disp); font-weight: 700; font-size: 18px; color: var(--cream); margin-bottom: 12px; letter-spacing: -0.01em; }
+.service-body { font-size: 13px; color: var(--cream-40); line-height: 1.7; margin-bottom: 20px; }
+.service-items { display: flex; flex-direction: column; gap: 6px; }
 .service-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 12px;
-  color: rgba(240,237,230,0.35);
-  line-height: 1.5;
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 12px; color: rgba(240,237,230,0.35); line-height: 1.5;
 }
 .service-item::before {
-  content: '';
-  width: 4px; height: 4px;
-  border-radius: 50%;
-  background: var(--green);
-  flex-shrink: 0;
-  margin-top: 6px;
-  opacity: 0.6;
+  content: ''; width: 4px; height: 4px;
+  border-radius: 50%; background: var(--green);
+  flex-shrink: 0; margin-top: 6px; opacity: 0.6;
 }
+
+/* ══════════════════════════════════════════
+   CASES
+══════════════════════════════════════════ */
+#cases { background: var(--bg-2); }
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: rgba(240,237,230,0.04);
+  margin-top: 0;
+}
+
+.case-card {
+  background: var(--bg-2);
+  padding: 40px 36px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: background 0.3s;
+}
+.case-card:hover { background: #0f0f0f; }
+
+.case-tag {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green-40);
+  margin-bottom: 16px;
+  border: 1px solid rgba(99,255,180,0.15);
+  display: inline-block;
+  padding: 4px 10px;
+  width: fit-content;
+}
+
+.case-industry {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cream-40);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.case-title {
+  font-family: var(--font-disp);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--cream);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.case-body {
+  font-size: 13px;
+  color: var(--cream-40);
+  line-height: 1.65;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.case-result {
+  border-top: 1px solid rgba(99,255,180,0.1);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.case-metric {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.case-metric-val {
+  font-family: var(--font-disp);
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--green);
+  line-height: 1;
+}
+
+.case-metric-label {
+  font-size: 11px;
+  color: var(--cream-40);
+  line-height: 1.4;
+}
+
+/* ══════════════════════════════════════════
+   TEAM / ABOUT
+══════════════════════════════════════════ */
+#team { background: var(--bg); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.team-text {}
+
+.team-values {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.team-value {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(240,237,230,0.06);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.team-value:last-child { border-bottom: none; }
+
+.tv-num {
+  font-family: var(--font-disp);
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--green-40);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.tv-title { font-size: 14px; font-weight: 600; color: var(--cream); margin-bottom: 4px; }
+.tv-body { font-size: 12px; color: var(--cream-40); line-height: 1.6; }
+
+.team-persons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.person-card {
+  background: var(--bg-2);
+  padding: 32px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  transition: background 0.3s;
+}
+.person-card:hover { background: var(--bg-green); }
+
+.person-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--bg-green);
+  border: 1px solid rgba(99,255,180,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--font-disp);
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--green);
+}
+
+.person-info {}
+.person-name { font-family: var(--font-disp); font-weight: 700; font-size: 15px; color: var(--cream); margin-bottom: 4px; }
+.person-role { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green-40); margin-bottom: 8px; }
+.person-bio { font-size: 12px; color: var(--cream-40); line-height: 1.6; }
 
 /* ══════════════════════════════════════════
    PROCESS
@@ -551,8 +664,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   position: relative;
   margin-top: 16px;
 }
-
-/* connecting line */
 .process-steps::before {
   content: '';
   position: absolute;
@@ -561,10 +672,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   background: linear-gradient(to right, transparent, rgba(99,255,180,0.2), rgba(99,255,180,0.2), transparent);
 }
 
-.process-step {
-  padding: 0 28px 40px;
-  position: relative;
-}
+.process-step { padding: 0 28px 40px; position: relative; }
 
 .step-dot {
   width: 14px; height: 14px;
@@ -572,39 +680,14 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   background: var(--bg-2);
   border: 1.5px solid rgba(99,255,180,0.35);
   margin-bottom: 28px;
-  position: relative;
-  z-index: 1;
+  position: relative; z-index: 1;
   transition: border-color 0.3s, background 0.3s;
 }
-.process-step:hover .step-dot {
-  border-color: var(--green);
-  background: rgba(99,255,180,0.15);
-}
+.process-step:hover .step-dot { border-color: var(--green); background: rgba(99,255,180,0.15); }
 
-.step-num {
-  font-family: var(--font-disp);
-  font-weight: 900;
-  font-size: 10px;
-  color: rgba(99,255,180,0.3);
-  letter-spacing: 0.1em;
-  margin-bottom: 10px;
-}
-
-.step-title {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 15px;
-  color: var(--cream);
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
-
-.step-body {
-  font-size: 12px;
-  color: var(--cream-40);
-  line-height: 1.65;
-}
-
+.step-num { font-family: var(--font-disp); font-weight: 900; font-size: 10px; color: rgba(99,255,180,0.3); letter-spacing: 0.1em; margin-bottom: 10px; }
+.step-title { font-family: var(--font-body); font-weight: 600; font-size: 15px; color: var(--cream); margin-bottom: 8px; line-height: 1.3; }
+.step-body { font-size: 12px; color: var(--cream-40); line-height: 1.65; }
 .step-time {
   display: inline-block;
   margin-top: 14px;
@@ -619,14 +702,13 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 }
 
 /* ══════════════════════════════════════════
-   RESULTS / NUMBERS
+   RESULTS
 ══════════════════════════════════════════ */
 #results {
   background: var(--bg-green);
   position: relative;
   overflow: hidden;
 }
-
 #results::before {
   content: '';
   position: absolute;
@@ -639,25 +721,11 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   pointer-events: none;
 }
 
-.results-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 
-.results-numbers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background: rgba(99,255,180,0.06);
-}
+.results-numbers { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: rgba(99,255,180,0.06); }
 
-.result-num-card {
-  background: var(--bg-green);
-  padding: 32px 28px;
-  position: relative;
-}
+.result-num-card { background: var(--bg-green); padding: 32px 28px; position: relative; }
 .result-num-card::after {
   content: '';
   position: absolute;
@@ -666,69 +734,92 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   background: rgba(99,255,180,0.08);
 }
 
-.rn-value {
-  font-family: var(--font-disp);
-  font-weight: 900;
-  font-size: clamp(32px, 4vw, 52px);
-  color: var(--green);
-  line-height: 1;
-  margin-bottom: 8px;
-}
+.rn-value { font-family: var(--font-disp); font-weight: 900; font-size: clamp(32px, 4vw, 52px); color: var(--green); line-height: 1; margin-bottom: 8px; }
+.rn-label { font-size: 12px; color: var(--cream-40); line-height: 1.5; }
 
-.rn-label {
-  font-size: 12px;
-  color: var(--cream-40);
-  line-height: 1.5;
-}
-
-.results-text { display: flex; flex-direction: column; gap: 0; }
-
-.result-point {
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(240,237,230,0.06);
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
+.result-point { padding: 20px 0; border-bottom: 1px solid rgba(240,237,230,0.06); display: flex; gap: 16px; align-items: flex-start; }
 .result-point:last-child { border-bottom: none; }
 
-.rp-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--green);
-  flex-shrink: 0;
-  margin-top: 6px;
-  box-shadow: 0 0 8px rgba(99,255,180,0.5);
+.rp-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 6px; box-shadow: 0 0 8px rgba(99,255,180,0.5); }
+.rp-text { font-size: 14px; color: var(--cream-40); line-height: 1.65; }
+.rp-text strong { color: var(--cream); font-weight: 600; }
+
+/* ══════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════ */
+#faq { background: var(--bg-2); }
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
 }
 
-.rp-text {
-  font-size: 14px;
-  color: var(--cream-40);
-  line-height: 1.65;
+.faq-list { display: flex; flex-direction: column; gap: 2px; }
+
+.faq-item {
+  background: var(--bg);
+  border-left: 2px solid transparent;
+  transition: border-color 0.3s, background 0.3s;
+  overflow: hidden;
 }
-.rp-text strong { color: var(--cream); font-weight: 600; }
+
+.faq-question {
+  padding: 22px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cream);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+.faq-question:hover { color: var(--green); }
+
+.faq-icon {
+  width: 20px; height: 20px;
+  flex-shrink: 0;
+  color: var(--green-40);
+  transition: transform 0.3s;
+}
+
+.faq-item.open { border-left-color: var(--green-40); background: var(--green-04); }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.faq-item.open .faq-answer { max-height: 300px; }
+
+.faq-answer-inner {
+  padding: 0 28px 22px;
+  font-size: 13px;
+  color: var(--cream-40);
+  line-height: 1.7;
+}
 
 /* ══════════════════════════════════════════
    CTA BAND
 ══════════════════════════════════════════ */
-#cta {
-  background: var(--bg);
-  padding: clamp(80px,10vw,120px) clamp(24px,5vw,80px);
-}
+#cta { background: var(--bg); padding: clamp(80px,10vw,120px) clamp(24px,5vw,80px); }
 
 .cta-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
   border: 1px solid rgba(99,255,180,0.12);
   padding: clamp(40px,5vw,64px) clamp(40px,5vw,72px);
   position: relative;
   overflow: hidden;
 }
-
 .cta-inner::before {
   content: '';
   position: absolute;
@@ -748,50 +839,23 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
   pointer-events: none;
 }
 
-.cta-label {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--green-40);
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+.cta-label { font-size: 9px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--green-40); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
 .cta-label::before { content: ''; width: 16px; height: 1px; background: var(--green-40); }
 
-.cta-h2 {
-  font-family: var(--font-disp);
-  font-weight: 900;
-  font-size: clamp(24px, 3.5vw, 44px);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--cream);
-  margin-bottom: 12px;
-}
-.cta-h2 span {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(99,255,180,0.75);
-}
+.cta-h2 { font-family: var(--font-disp); font-weight: 900; font-size: clamp(24px, 3.5vw, 44px); line-height: 1.1; letter-spacing: -0.02em; color: var(--cream); margin-bottom: 12px; }
+.cta-h2 span { color: transparent; -webkit-text-stroke: 1.5px rgba(99,255,180,0.75); }
 
-.cta-sub {
-  font-size: 14px;
-  color: var(--cream-40);
-  line-height: 1.6;
-}
+.cta-sub { font-size: 14px; color: var(--cream-40); line-height: 1.6; margin-bottom: 28px; }
 
-.cta-right {
+.cta-contacts-row {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
+  gap: 10px;
 }
 
 .cta-contact {
   font-family: var(--font-disp);
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: clamp(16px, 1.8vw, 22px);
   font-weight: 700;
   color: var(--green);
   letter-spacing: -0.01em;
@@ -802,12 +866,130 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 .cta-contact:hover { opacity: 0.75; }
 
 .cta-email {
-  font-size: 12px;
-  font-weight: 300;
-  color: var(--cream-40);
-  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid rgba(99,255,180,0.35);
+  color: var(--cream);
+  background: rgba(99,255,180,0.06);
+  transition: background 0.2s, border-color 0.2s;
 }
+.cta-email:hover { background: var(--green-08); border-color: rgba(99,255,180,0.6); }
+
+/* Messenger buttons */
+.cta-messengers {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.btn-messenger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid rgba(99,255,180,0.2);
+  color: var(--cream-40);
+  background: transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn-messenger:hover { background: var(--green-08); color: var(--cream); border-color: rgba(99,255,180,0.4); }
+
+.btn-messenger svg { flex-shrink: 0; }
+
+/* ── Contact Form ── */
+.cta-form-wrap { display: flex; flex-direction: column; gap: 0; }
+
+.form-title {
+  font-family: var(--font-disp);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.form-sub { font-size: 12px; color: var(--cream-40); margin-bottom: 24px; line-height: 1.5; }
+
+.form-field { margin-bottom: 12px; }
+
+.form-field label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green-40);
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  background: rgba(240,237,230,0.04);
+  border: 1px solid rgba(240,237,230,0.1);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus { border-color: rgba(99,255,180,0.35); }
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: rgba(240,237,230,0.18); }
+.form-field textarea { resize: vertical; min-height: 80px; }
+.form-field select option { background: #111; color: var(--cream); }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.form-submit {
+  width: 100%;
+  background: var(--green);
+  color: var(--bg);
+  border: none;
+  padding: 15px 24px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  margin-top: 4px;
+}
+.form-submit:hover { opacity: 0.88; transform: translateY(-1px); }
+
+.form-note { font-size: 10px; color: rgba(240,237,230,0.2); line-height: 1.5; margin-top: 10px; }
+
+.form-success {
+  display: none;
+  padding: 24px;
+  background: var(--green-08);
+  border: 1px solid rgba(99,255,180,0.2);
+  text-align: center;
+}
+.form-success.visible { display: block; }
+.form-success-icon { font-size: 32px; margin-bottom: 12px; }
+.form-success-title { font-family: var(--font-disp); font-weight: 700; font-size: 18px; color: var(--green); margin-bottom: 8px; }
+.form-success-text { font-size: 13px; color: var(--cream-40); line-height: 1.6; }
 
 /* ══════════════════════════════════════════
    FOOTER
@@ -818,57 +1000,19 @@ footer {
   padding: 48px clamp(24px,5vw,80px);
 }
 
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 40px;
-  align-items: center;
-}
-
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
 .footer-left { display: flex; flex-direction: column; gap: 10px; }
-
 .footer-logo { display: flex; align-items: center; gap: 14px; }
 
-.footer-abbrev {
-  font-family: var(--font-disp);
-  font-weight: 900;
-  font-size: 20px;
-  color: var(--cream);
-  letter-spacing: -0.02em;
-}
+.footer-abbrev { font-family: var(--font-disp); font-weight: 900; font-size: 20px; color: var(--cream); letter-spacing: -0.02em; }
 .footer-abbrev .out { color: transparent; -webkit-text-stroke: 1px rgba(99,255,180,0.85); }
 
-.footer-tagline {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(240,237,230,0.25);
-  margin-top: 3px;
-}
+.footer-tagline { font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(240,237,230,0.25); margin-top: 3px; }
+.footer-copy { font-size: 11px; color: rgba(240,237,230,0.18); letter-spacing: 0.04em; }
 
-.footer-copy {
-  font-size: 11px;
-  color: rgba(240,237,230,0.18);
-  letter-spacing: 0.04em;
-}
+.footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
 
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
-}
-
-.footer-contact {
-  font-size: 12px;
-  color: rgba(240,237,230,0.35);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  transition: color 0.2s;
-}
+.footer-contact { font-size: 12px; color: rgba(240,237,230,0.35); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
 .footer-contact:hover { color: var(--green); }
 
 /* ══════════════════════════════════════════
@@ -881,11 +1025,13 @@ footer {
   .stat-item       { border-right: none; border-bottom: 1px solid rgba(240,237,230,0.06); }
   .problem-grid    { grid-template-columns: 1fr; gap: 40px; }
   .services-grid   { grid-template-columns: 1fr; }
+  .cases-grid      { grid-template-columns: 1fr; }
+  .team-grid       { grid-template-columns: 1fr; gap: 40px; }
   .process-steps   { grid-template-columns: 1fr 1fr; }
   .process-steps::before { display: none; }
   .results-grid    { grid-template-columns: 1fr; gap: 40px; }
-  .cta-inner       { grid-template-columns: 1fr; gap: 32px; }
-  .cta-right       { align-items: flex-start; }
+  .faq-grid        { grid-template-columns: 1fr; gap: 40px; }
+  .cta-inner       { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner    { grid-template-columns: 1fr; }
   .footer-right    { align-items: flex-start; }
   .nav-links       { display: none; }
@@ -894,6 +1040,7 @@ footer {
 @media (max-width: 560px) {
   .process-steps   { grid-template-columns: 1fr; }
   .results-numbers { grid-template-columns: 1fr 1fr; }
+  .form-row        { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -918,18 +1065,17 @@ footer {
   </a>
   <ul class="nav-links">
     <li><a href="#services">Услуги</a></li>
+    <li><a href="#cases">Кейсы</a></li>
     <li><a href="#process">Как работаем</a></li>
-    <li><a href="#results">Результаты</a></li>
+    <li><a href="#team">О нас</a></li>
   </ul>
-  <a class="nav-cta" href="#cta">Связаться</a>
+  <a class="nav-cta" href="#cta">Получить диагностику</a>
 </nav>
 
 <!-- ══ HERO ══ -->
 <section id="hero" class="hero">
   <div class="hero-glow-1"></div>
   <div class="hero-glow-2"></div>
-
-  <!-- corner decoration -->
   <svg class="hero-corner" width="80" height="80" viewBox="0 0 80 80" fill="none">
     <line x1="80" y1="0" x2="80" y2="80" stroke="rgba(99,255,180,0.1)" stroke-width="1"/>
     <line x1="0" y1="0" x2="80" y2="0" stroke="rgba(99,255,180,0.1)" stroke-width="1"/>
@@ -939,18 +1085,13 @@ footer {
   <div class="hero-inner">
     <div class="hero-left">
       <div class="hero-label">Промышленный консалтинг нового поколения</div>
-      <h1 class="hero-h1">
-        Находим<br>
-        скрытые<br>
-        <span class="outline">потери</span>
-      </h1>
+      <h1 class="hero-h1">Находим<br>скрытые<br><span class="outline">потери</span></h1>
       <p class="hero-body">Диагностируем закупки, подрядчиков и производственные процессы. Каждая рекомендация — с конкретным финансовым обоснованием в рублях.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="#cta">Получить диагностику</a>
         <a class="btn-ghost" href="#services">Узнать подробнее</a>
       </div>
     </div>
-
     <div class="hero-right">
       <svg width="380" height="380" viewBox="0 0 80 80" fill="none">
         <rect x="6" y="65" width="62" height="2.5" fill="rgba(99,255,180,0.35)" rx="1"/>
@@ -1087,6 +1228,113 @@ footer {
   </div>
 </section>
 
+<!-- ══ CASES ══ -->
+<section id="cases">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Кейсы</div>
+      <h2 class="section-h2">Реальные результаты<br>в <span class="outline">цифрах</span></h2>
+      <p class="section-sub">Примеры проектов с измеримым финансовым эффектом.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal reveal-delay-1">
+        <div class="case-tag">Закупки</div>
+        <div class="case-industry">Металлургия · МЗК</div>
+        <div class="case-title">Снижение затрат на сырьё и расходные материалы</div>
+        <div class="case-body">Провели анализ 47 поставщиков за 18 месяцев. Выявили систематические переплаты по 12 товарным группам: неактуальные прайс-листы, отсутствие конкурентной процедуры, завышенные транспортные надбавки.</div>
+        <div class="case-result">
+          <div class="case-metric">
+            <div class="case-metric-val">−22%</div>
+            <div class="case-metric-label">экономия бюджета закупок<br>за первые 6 месяцев</div>
+          </div>
+          <div class="case-metric">
+            <div class="case-metric-val">18 млн ₽</div>
+            <div class="case-metric-label">годовой эффект</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal reveal-delay-2">
+        <div class="case-tag">Подрядчики</div>
+        <div class="case-industry">Нефтехимия · Переработка</div>
+        <div class="case-title">Оптимизация подрядных работ по техническому обслуживанию</div>
+        <div class="case-body">Аудит 23 подрядчиков по техническому обслуживанию и ремонту. Выявлено несоответствие рыночным ставкам, дублирование работ и отсутствие KPI по качеству. Проведена переквалификация и тендер.</div>
+        <div class="case-result">
+          <div class="case-metric">
+            <div class="case-metric-val">−35%</div>
+            <div class="case-metric-label">снижение затрат на подрядчиков</div>
+          </div>
+          <div class="case-metric">
+            <div class="case-metric-val">×5 ROI</div>
+            <div class="case-metric-label">возврат инвестиций в диагностику</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal reveal-delay-3">
+        <div class="case-tag">Производство</div>
+        <div class="case-industry">Машиностроение · Серийное</div>
+        <div class="case-title">Устранение узких мест и снижение простоев оборудования</div>
+        <div class="case-body">Хронометраж 14 производственных участков. Зафиксированы потери: ожидание комплектующих, переналадка без стандартизации, очереди между операциями. Разработан план балансировки линий.</div>
+        <div class="case-result">
+          <div class="case-metric">
+            <div class="case-metric-val">+27%</div>
+            <div class="case-metric-label">рост производственного выпуска</div>
+          </div>
+          <div class="case-metric">
+            <div class="case-metric-val">−40%</div>
+            <div class="case-metric-label">сокращение простоев оборудования</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TEAM ══ -->
+<section id="team">
+  <div class="section-inner">
+    <div class="team-grid">
+      <div class="team-text reveal">
+        <div class="section-label">О нас</div>
+        <h2 class="section-h2">Практики,<br>а не <span class="outline">теоретики</span></h2>
+        <p class="section-sub">Команда с опытом работы внутри промышленных предприятий. Мы знаем, как устроены закупки и производство изнутри.</p>
+        <div class="team-values">
+          <div class="team-value">
+            <div class="tv-num">01</div>
+            <div>
+              <div class="tv-title">Ответственность за результат</div>
+              <div class="tv-body">Фиксируем цели в договоре. Если не достигаем — несём финансовую ответственность.</div>
+            </div>
+          </div>
+          <div class="team-value">
+            <div class="tv-num">02</div>
+            <div>
+              <div class="tv-title">Без остановки производства</div>
+              <div class="tv-body">Работаем параллельно с текущими процессами. Ноль простоев, ноль дополнительной нагрузки на коллектив.</div>
+            </div>
+          </div>
+          <div class="team-value">
+            <div class="tv-num">03</div>
+            <div>
+              <div class="tv-title">Только измеримые рекомендации</div>
+              <div class="tv-body">Каждое предложение содержит конкретный финансовый расчёт: сколько стоит сейчас и сколько будет после.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-persons reveal reveal-delay-2">
+        <div class="person-card">
+          <div class="person-avatar">АС</div>
+          <div class="person-info">
+            <div class="person-name">Алексей Солин</div>
+            <div class="person-role">Руководитель проектов</div>
+            <div class="person-bio">10 лет в промышленном консалтинге. Специализация — оптимизация закупок и снижение затрат на подрядные работы. Реализовал 20+ проектов на предприятиях Нижегородской области.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ PROCESS ══ -->
 <section id="process">
   <div class="section-inner">
@@ -1173,19 +1421,163 @@ footer {
   </div>
 </section>
 
+<!-- ══ FAQ ══ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="faq-grid">
+      <div class="reveal">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-h2">Ответы на<br>частые <span class="outline">вопросы</span></h2>
+        <p class="section-sub">Если не нашли ответ — позвоните или напишите нам, ответим в течение часа.</p>
+      </div>
+      <div class="faq-list reveal reveal-delay-2">
+        <div class="faq-item">
+          <div class="faq-question">
+            Сколько стоит диагностика?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Стоимость зависит от масштаба предприятия и выбранных направлений. Бесплатная экспресс-диагностика (60 минут) помогает определить приоритеты и оценить потенциал. После этого формируется конкретное коммерческое предложение. Инвестиция в диагностику окупается в среднем в 3–8 раз.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Нужно ли останавливать производство?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Нет. Мы работаем параллельно с текущими процессами. Все наблюдения, хронометраж и сбор данных проводятся без вмешательства в операционный ритм. Нагрузка на персонал минимальна.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Как быстро появятся первые результаты?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">По закупкам и подрядчикам — первые «быстрые победы» видны через 2–4 недели: это ценовые переговоры и замена завышенных позиций. По производственным процессам изменения внедряются в течение 1–3 месяцев в зависимости от сложности.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Несёте ли вы ответственность за результат?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Да. Целевые показатели фиксируются в договоре до начала работ. Если по итогам проекта цели не достигнуты — предусмотрены финансовые механизмы ответственности. Это принципиальное отличие от классического консалтинга.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Для каких отраслей подходит диагностика?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Металлургия, машиностроение, нефтехимия, пищевая промышленность, строительные материалы, деревообработка и другие производственные предприятия. Методология адаптируется под специфику каждой отрасли. Минимальный размер предприятия — от 200 сотрудников.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Конфиденциальны ли данные предприятия?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Полностью. Перед началом работ подписывается соглашение о неразглашении (NDA). Все данные используются исключительно в рамках проекта и не передаются третьим лицам ни при каких условиях.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ CTA ══ -->
 <section id="cta">
   <div class="cta-inner reveal">
     <div class="cta-glow"></div>
+    <!-- LEFT: info + contacts -->
     <div>
       <div class="cta-label">Следующий шаг</div>
       <div class="cta-h2">Бесплатная<br><span>экспресс-диагностика</span></div>
       <div class="cta-sub">60 минут — разберём вашу ситуацию и покажем на конкретных цифрах, где находятся точки роста именно вашего предприятия.</div>
+      <div class="cta-contacts-row">
+        <a class="cta-contact" href="tel:+79991375257">+7 (999) 137-52-57</a>
+        <a class="cta-email" href="mailto:info@trp-pro.ru">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#63ffb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+          </svg>
+          info@trp-pro.ru
+        </a>
+        <div class="cta-messengers">
+          <a class="btn-messenger" href="https://max.ru/im?id=79991375257" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color:#63ffb4">
+              <rect width="24" height="24" rx="6" fill="currentColor" fill-opacity="0.15"/>
+              <text x="12" y="17" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="11" fill="#63ffb4">MAX</text>
+            </svg>
+            MAX
+          </a>
+          <a class="btn-messenger" href="https://t.me/alexseisolin" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color:#63ffb4">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            Telegram
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="cta-right">
-      <a class="cta-contact" href="tel:+79991375257">+7 (999) 137-52-57</a>
-      <a class="btn-primary" href="mailto:info@trp-pro.ru">Получить диагностику</a>
-      <a class="cta-email" href="mailto:info@trp-pro.ru">info@trp-pro.ru</a>
+
+    <!-- RIGHT: contact form -->
+    <div class="cta-form-wrap">
+      <div class="form-title">Оставить заявку</div>
+      <div class="form-sub">Ответим в течение 1 рабочего часа и согласуем удобное время звонка.</div>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fname">Ваше имя</label>
+            <input type="text" id="fname" name="name" placeholder="Иван Петров" required>
+          </div>
+          <div class="form-field">
+            <label for="fphone">Телефон</label>
+            <input type="tel" id="fphone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="fcompany">Предприятие</label>
+          <input type="text" id="fcompany" name="company" placeholder="Название компании">
+        </div>
+        <div class="form-field">
+          <label for="fservice">Направление</label>
+          <select id="fservice" name="service">
+            <option value="">Выберите направление...</option>
+            <option value="purchases">Диагностика закупок</option>
+            <option value="contractors">Аудит подрядчиков</option>
+            <option value="process">Процессный аудит</option>
+            <option value="complex">Комплексная диагностика</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="fmessage">Кратко о задаче (необязательно)</label>
+          <textarea id="fmessage" name="message" placeholder="Опишите ситуацию или вопрос..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Отправить заявку →</button>
+        <div class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных. Данные не передаются третьим лицам.</div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✓</div>
+        <div class="form-success-title">Заявка отправлена!</div>
+        <div class="form-success-text">Мы свяжемся с вами в течение 1 рабочего часа для согласования времени экспресс-диагностики.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1213,35 +1605,77 @@ footer {
     <div class="footer-right">
       <a class="footer-contact" href="tel:+79991375257">+7 (999) 137-52-57</a>
       <a class="footer-contact" href="mailto:info@trp-pro.ru">info@trp-pro.ru</a>
+      <a class="footer-contact" href="https://max.ru/im?id=79991375257" target="_blank" rel="noopener">MAX</a>
+      <a class="footer-contact" href="https://t.me/alexseisolin" target="_blank" rel="noopener">Telegram</a>
       <a class="footer-contact" href="https://trp-pro.ru">trp-pro.ru</a>
     </div>
   </div>
 </footer>
 
-<!-- ══ SCROLL REVEAL JS ══ -->
+<!-- ══ SCRIPTS ══ -->
 <script>
+// Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  if (!name || !phone) {
+    alert('Пожалуйста, укажите имя и телефон.');
+    return;
+  }
+  // Collect form data
+  const data = {
+    name,
+    phone,
+    company: document.getElementById('fcompany').value,
+    service: document.getElementById('fservice').value,
+    message: document.getElementById('fmessage').value
+  };
+  // Send to Yandex.Metrika goal if available
+  if (typeof ym !== 'undefined') {
+    ym(108475668, 'reachGoal', 'form_submit', data);
+  }
+  // Show success
+  this.style.display = 'none';
+  document.getElementById('formSuccess').classList.add('visible');
+});
 </script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108475668', 'ym');
-
-    ym(108475668, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+   (function(m,e,t,r,i,k,a){
+       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+   })(window, document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+   ym(108475668, 'init', {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/108475668" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
+</html>
+
 </html>
